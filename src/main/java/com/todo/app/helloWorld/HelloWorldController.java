@@ -1,4 +1,4 @@
-package com.todo.app;
+package com.todo.app.helloWorld;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
