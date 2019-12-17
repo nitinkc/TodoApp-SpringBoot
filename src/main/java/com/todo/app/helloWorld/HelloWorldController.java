@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldController {
 
+    @GetMapping("/")
+    public String getHelloWorld(){
+        return "<h1>Hello!! If you see this, it means the Server is up and running</h1>";
+    }
+
     @GetMapping("/hello-world")
     public HelloWorldBean getHelloWorldBean(){
         //throw new RuntimeException("Exception thrown");
