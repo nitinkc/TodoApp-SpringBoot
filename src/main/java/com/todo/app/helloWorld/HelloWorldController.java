@@ -14,7 +14,9 @@ public class HelloWorldController {
 
     @GetMapping("/")
     public String getHelloWorld(){
-        return "<h1>Hello!! If you see this, it means the Server is up and running</h1>";
+        String msg = "<h1>Hello!! If you see this, it means the Server is up and running</h1>";
+        msg = msg + "<head> MIC TESTING...1....2....3....</head>";
+        return msg;
     }
 
     @GetMapping("/hello-world")
