@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+      - docker login –u User –p $LOGIN_PASSWORD
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
+      - mvn package
+      - echo Build started on `date`
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - target/todo-app-rest-services-0.0.1-SNAPSHOT.jar
