@@ -4,7 +4,7 @@
 docker run --detach --env MYSQL_ROOT_PASSWORD=nitin --env MYSQL_USER=nitin --env MYSQL_PASSWORD=nitin --env MYSQL_DATABASE=todo_db --name mysql --publish 3306:3306 mysql:5.7
 ```
 
-the conainer runs l;ike
+the conainer runs like
 
 ```shell script
 nitin@Nitins-MBP-3:~|⇒  docker ps --all
