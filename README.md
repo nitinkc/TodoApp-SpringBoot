@@ -13,3 +13,8 @@ public class HelloWorldController {
     }
 }
 ```
+
+## Run from docker
+```
+docker run -p 5000:5000 nitinkc/todo-app:todo-backend-26                                                                                                           
+```
